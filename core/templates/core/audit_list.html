@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audit List</title>
+</head>
+<body>
+    <h1>Audit List</h1>
+    <ul>
+        {% for entry in audit_entries %}
+            <li>Action: {{ entry.action }} - User: {{ entry.user.username }} - Date: {{ entry.created }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!-- core/templates/core/table_model_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Model List</title>
+</head>
+<body>
+    <h1>Table Model List</h1>
+    <ul>
+        {% for model in table_models %}
+            <li>{{ model.name }} - {{ model.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

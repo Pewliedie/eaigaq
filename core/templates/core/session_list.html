@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session List</title>
+</head>
+<body>
+    <h1>Session List</h1>
+    <ul>
+        {% for session in sessions %}
+            <li>User: {{ session.user.username }} - Login: {{ session.login }} - Logout: {{ session.logout }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

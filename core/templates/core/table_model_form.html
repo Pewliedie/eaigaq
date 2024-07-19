@@ -1,0 +1,16 @@
+<!-- core/templates/core/table_model_form.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Model Form</title>
+</head>
+<body>
+    <h1>Table Model Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

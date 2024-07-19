@@ -1,0 +1,16 @@
+<!-- core/templates/core/material_evidence_form.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Material Evidence</title>
+</head>
+<body>
+    <h1>Create Material Evidence</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

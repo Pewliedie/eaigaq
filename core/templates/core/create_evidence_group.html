@@ -1,0 +1,16 @@
+<!-- core/templates/core/create_evidence_group.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Evidence Group</title>
+</head>
+<body>
+    <h1>Create Evidence Group</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Generate QR Code</button>
+    </form>
+</body>
+</html>

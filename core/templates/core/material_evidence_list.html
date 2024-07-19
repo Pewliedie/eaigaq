@@ -1,0 +1,16 @@
+<!-- core/templates/core/material_evidence_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Material Evidence List</title>
+</head>
+<body>
+    <h1>Material Evidence List</h1>
+    <ul>
+        {% for material in materials %}
+            <li>{{ material.name }} - {{ material.status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
